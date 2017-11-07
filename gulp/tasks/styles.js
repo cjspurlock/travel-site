@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     mixins = require('postcss-mixins'),
     cssvars = require('postcss-simple-vars'),
     nested = require('postcss-nested'),
+    hexrgba = require('postcss-hexrgba'),
     autoprefixer = require('autoprefixer');
 
 gulp.task('styles', function() {
@@ -13,6 +14,7 @@ gulp.task('styles', function() {
             mixins,
             cssvars,
             nested,
+            hexrgba,
             autoprefixer
         ]))
         .on('error', function(errorInfo) {
